@@ -18,12 +18,12 @@ const hello = await $client.hello.useQuery({ text: 'client' })
         <!-- As superjson is already pre-configured, we can use time as a Date object without further deserialization 🎉 -->
         tRPC Data: "{{ hello.data.value?.greeting }}" send at "{{ hello.data.value?.time.toLocaleDateString('en-EN') }}".
       </p>
-    
+
       <div class="actions">
         <WelcomeButtonLink href="https://sidebase.io/sidebase/components/trpc" :blank="true">
           Documentation
         </WelcomeButtonLink>
-        
+
       </div>
     </div>
   </div>
